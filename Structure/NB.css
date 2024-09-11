@@ -13,3 +13,9 @@
   font-style: normal;
 }
 
+.main{
+  font-size: 20px;
+  background-color: rgba(255, 55, 0, 0.608);
+  border-radius: 1px 5px;
+}
+
