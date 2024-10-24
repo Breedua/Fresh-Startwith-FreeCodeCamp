@@ -7,46 +7,73 @@
     <link href="https:fonts.googleapis.com/css?family=open+Sans" ref="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="./style.css">
 <body class="body">
+
+
     <!-- This is the freecodecamp module 1, learn HTML by building a catphoto app project -->
     <!-- main should always be used on to distinguish hero section for SEO reasons -->
+
     <main class="main">
-
-
-    <!-- first section/Hero section -->
+       <!-- Nesting is when other elemnts are put inside the main element -->
+        <h1>LESSONS ON HTML</h1>
+       <!-- first section/Hero section -->
+       <!-- The section element is used to define sections in a document, such as chapters, headers, footers, or any other sections of the document. It is a semantic element that helps with SEO and accessibility. -->
         <section class="hero">
+            <h2>Learning About Elements and Attributes</h2>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="I am not a fan of Cats in anway shape or form">
+            <!-- if the img element doesnt have src(source), the picture will not show  -->
+
+          <!-- the element "a" is used to make anything clickable, it is an anchor tag/element used to create a link. Wrapping anything in an anchor tag will make it clickable. Other elements can also be wrapped in an anchor tag as seen in the code example below -->
+          <!-- the next line shows how to make both a picture and its discription clickable using element <a> and attribute href alone -->
+            <a href="https://freecatphotoapp.com">link to cat pictures<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A photo of a cat">Picture of the same cat</a>
+                
 
 
-<!-- the element "a" is used to make anything clickable -->
- <!-- the next line shows how to make both a picture and its discription clickable using a href alone -->
-            <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A photo of a cat">Picture </a>
-<!-- if the img element doesnt have src, the picture will not show  -->
+ <!-- to make a word or words clickable in a p tag add "a href" inside the p tag/element and around the word or words. Here we see that just as other elements can be added to the <a> element, the <a> element can also be added to other elements like p or h.  -->
+  <p>This will contain everything you need plus explanations and much much more. click <a href="https://food-page-rho.vercel.app/" target="_blank">the link</a> to access my food page on vercel.</p>
+  <!-- The target attribute specifies where to open the linked document. target="_blank" opens the linked document in a new tab or window on the browser. -->
 
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, voluptatibus provident odio beatae harum consequuntur, itaque, culpa officiis vitae dolores quae inventore. Iste fugit asperiores molestias dolore alias. Atque, rem?</p>
+            
 
- <!-- to make a word or words clickable in a p tag add "a href" inside the p tag/element and around the word or words   -->
-  <p>This will contain everything you need ihhgfdplus explanations and much much more. click <a href="https://food-page-rho.vercel.app/" target="_blank">the link</a> to access my food page on vercel.</p>
-  <!-- The target attribute specifies where to open the linked document. target="_blank" opens the linked document in a new tab or window. -->
-
-
-  <!-- The figure element represents self-contained content and will allow you to associate an image with a caption. -->
-  <figure>
-     <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."> 
-    <figcaption>Just a random photo to help me learn</figcaption>
-    </figure>
-  <!-- A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. -->
+ 
 
         </section>
     </main>
 
 <!-- 1a section -->
     <section class="Part1" >
+        <h2>Learning About Lists and List Types</h2>
+
+        <!-- To place emphasis on a specific word or phrase, you can use the em element. The em element can be wrapped as well in any other element -->
+        <h3>My journey back into tech</h3>
+        
+        <h4>Dates i have Recorded Myself Working on This Project</h4>
+        <!-- creating an unordered list -->
+        <ul> 
+            <li>22/08/24</li>
+            <li>24/08/24</li>
+            <li>24/10/24</li>
+
+        </ul>
+
+
+ <!-- The figure element represents self-contained content and will allow you to associate an image with a caption. -->
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate."> 
+           <figcaption>Just a random photo to help me learn</figcaption>
+        </figure>
+ <!-- A figure caption (figcaption) element is used to add a caption to describe the image contained within the figure element. -->
+
+
         <div>
-            <h1>My Return back to tech</h1>
-            <p>My journey back into tech as a beautiful girl who deeply regrets giving it up in the first place and who now wants to start learning from scratch allover again and also learn DevOps.</p>
-            <p>Maybe i should keep a hard copy journal after all. I tried keeping a voice journal but my phone crashed and i lost all my journals on the notes app.</p>
-            <p>I'm not ashamed to admit that there a alot of things i regret in my life, and one of them is not starting tech between 2018-2020. And worse of all is dumping tech in september of 2023 to do nothing. Now i just want to move forward and do all i ca. I cannot turn back the hands of time so i will make sure to utilize every single spare second i have been gifted.</p>
-            <p>22/08/2024</p>
-            <p>24/08/24
-            </p>
+            <h3>My projected Tech Path</h3>
+            <!-- creating an ordered list. Just an Excuse to create an Ordered list -->
+             <ol>
+                <li>Front-end Development</li>
+                <li>Back-end Development</li>
+                <li>Full Stack Engineering</li>
+                <li>DevOps</li>
+             </ol>
             <h3><strong><em>GOODLUCK BRENDA</em></strong></h3>
 
         </div>
@@ -69,12 +96,13 @@
 
     <!-- Third and final section with call to action button -->
     <section class="part3">
-
+        <p>I'm not ashamed to admit that there a alot of things i regret in my life, and one of them is not starting tech between 2018-2020. And worse of all is dumping tech in september of 2023 to do nothing. Now i just want to move forward and do all i ca. I cannot turn back the hands of time so i will make sure to utilize every single spare second i have been gifted.</p>
+            
     </section>
     
     <!-- Footer containing links and notification signups -->
     <footer class="footer">
-
+        <h5>A <em>beautiful woman</em> who deeply regrets giving it up in the first place and who now wants to start learning from scratch allover again and also learn DevOps.</h5>
     </footer>
 </body>
 </html>
