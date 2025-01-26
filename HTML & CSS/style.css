@@ -1,0 +1,109 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: rgba(32, 32, 62, 0.799);
+    margin: 20px 50px;
+}
+
+.logoName {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.headerList {
+    display: flex;
+    flex-direction: row
+}
+
+.headerList, li, a {
+    list-style: none;
+    color: black;
+    gap: 30px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.headerList li a :hover {
+    color: brown;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    height: 100%;
+}
+
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+}
+
+.hero h1 p {
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.hero1 h2 p {
+    align-items: center;
+}
+
+.hero1 h2 {
+    font-size: 28px;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.hero1 p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px;
+}
+
+.hero2{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+
+}
