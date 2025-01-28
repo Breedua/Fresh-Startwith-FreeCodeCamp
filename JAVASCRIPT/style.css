@@ -13,9 +13,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: 35px;
     background-color: rgba(32, 32, 62, 0.799);
     margin: 20px 50px;
+    border: 5px solid rgb(77, 70, 58);
 }
 
 .logoName {
@@ -32,6 +33,7 @@ header {
 
 .headerList, li, a {
     list-style: none;
+    text-decoration: none;
     color: black;
     gap: 30px;
     font-size: 18px;
@@ -39,8 +41,8 @@ header {
     cursor: pointer;
 }
 
-.headerList li a :hover {
-    color: brown;
+.headerList, li, a:hover {
+    color: rgba(186, 182, 182, 0.552)
 }
 
 .section1 {
@@ -51,6 +53,7 @@ header {
     margin-top: 70px;
     font-family: Georgia, Times, 'Times New Roman', serif;
     width: 100%;
+    line-height: 1.5;
     height: 100%;
 }
 
