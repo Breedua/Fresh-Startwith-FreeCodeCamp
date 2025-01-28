@@ -4,7 +4,14 @@
     padding: 0;
 }
 
-.edu-vic-wa-nt-beginner-<uniquifier> {
+
+
+/* font embedded in the HTML head was gotten from google fonts and is called poppins. 
+The commented "Edu VIC WA NT Beginner", serif; and "Source Sans 3", serif; 
+are the outcome of the poppins fonts and how to use them in css. 
+This practice is now a resource material for these fonts*/
+
+/* .edu-vic-wa-nt-beginner-<uniquifier> {
   font-family: "Edu VIC WA NT Beginner", serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -16,51 +23,59 @@
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-}
+} */
+
+
+
+/*'Source Sans Pro'; and 'Spin Cycle OT' are downloaded and have their folders in this document with all the fonts included.
+first point of order is to link the parent font-family(folder) and the specific font to be used in that font-family.*/
+
 
 @font-face {
     font-family: 'Source Sans Pro';
     src: url('./source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'Source Sans Pro';
     src: url('./source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
   }
 
-@font-face {
-    font-family: 'Spin Cycle OT' ;
-    src: url('./spin-cycle-OT/spincyxle_3d_ot.otf') format('opentype');
-    font-weight:bold;
-    font-style: normal;
-}
-
-@font-face {
+  @font-face {
     font-family: 'Spin Cycle OT';
-    src: url('./spin-cycle-OT/spincyxle_ot.otf') format('opentype');
+    src: url('./Spin-Cycle-OT/spincycle_3d_ot.otf') format('opentype');
+    font-weight: bold;
     font-style: normal;
-    font-weight: normal;
-}
+  }
 
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('./Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 
 body {
     display: flex;
     flex-direction: column;
+    background-color: #f3eeea;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 35px;
-    background-color: rgba(32, 32, 62, 0.799);
+    padding: 20px;
     margin: 20px 50px;
-    border: 5px solid rgb(77, 70, 58);
+    border: 1px solid rgb(77, 70, 58);
+    box-shadow: 10px 10px 20px #324438ad;
+    font-family: "Source Sans 3", serif;
+    font-weight: bold;
+    background-color: whitesmoke;
 }
 
 .logoName {
@@ -68,6 +83,7 @@ header {
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    color: #324438;
 }
 
 .headerList {
@@ -78,16 +94,29 @@ header {
 .headerList, li, a {
     list-style: none;
     text-decoration: none;
-    color: black;
+    color: #91918f;
     gap: 30px;
     font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     cursor: pointer;
 }
 
 .headerList, li, a:hover {
-    color: rgba(186, 182, 182, 0.552)
+    color: rgba(186, 182, 182, 0.945)
 }
+
+.button {
+    color: white;
+    background-color: #324438;
+    padding: 5px 20px;
+}
+
+
+.section0 {
+    font-family: 'Spin Cycle OT';
+    width: 100%;
+    
+}
+ h1-#383733,p-#bcb9b4
 
 .section1 {
     display: flex;
