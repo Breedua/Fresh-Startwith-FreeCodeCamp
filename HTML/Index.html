@@ -75,7 +75,7 @@
                 <!--To make a form field unskippable add the word required at the end-->
                 <input type="text" name="catphotourl" placeholder="cat photo URL" required>
                 <button>Submit</button>
- <!--form type radio is for radio style, to make only one of the options click add the same "name" to all of them-->
+ <!--form type radio is for radio style, to make only one of the options click add the same "name" or "value" to all of them-->
  <!-- Input are inline elements so use fieldset to set them apart in a block -->
             <fieldset>
                 <legend>Select your Gender</legend>
@@ -84,6 +84,10 @@
                 <input type="radio" name="gender" id="female" value="female">Female
                 <input type="radio" name="gender" id="other" value="other">Other
             </fieldset>    
+
+            <fieldset>
+                <input id="loving" type="checkbox" name="personality"><label for="loving">Loving</label>
+            </fieldset>
               </form>
         </section>
     </main>
