@@ -61,6 +61,30 @@
                 <img src="Pic3.jpg" alt="" width="250px" height="250px">
             </div>
         </section>
+
+        <section>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>  
+              </figure>
+
+              <h2>Cat Form</h2>
+              <!--Form action means where the form will go after submission-->
+              <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <legend>Testing</legend> 
+                <!--To make a form field unskippable add the word required at the end-->
+                <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+                <button>Submit</button>
+ <!--form type radio is for radio style, to make only one of the options click add the same "name" to all of them-->
+ <!-- Input are inline elements so use fieldset to set them apart in a block -->
+            <fieldset>
+                <legend>Select your Gender</legend>
+                <input type="radio" name="gender" id="male" value="male">Male
+                <input type="radio" name="gender" id="female" value="female">Female
+                <input type="radio" name="gender" id="other" value="other">Other
+            </fieldset>    
+              </form>
+        </section>
     </main>
     
 </body>
