@@ -39,63 +39,65 @@
           <option value="11">Too long to remember</option>
         </select>
       </label>
-      <label> How did you get started with tech?</label>
+      <br> 
+      <br>
+      <label class="question"> How did you get started with tech?</label>
       <label for="bootcamp">
-        <input type="radio" name="tech-start" id="bootcamp" checked/> Bootcamp
+        <input type="radio" name="tech-start" id="bootcamp" checked class="inline" value="bootcamp"/> Bootcamp
         </label>
         <label for="Computer-Sci">
-        <input type="radio" name="tech-start" id="Computer-Sci"/> A Computer Science Degree
+        <input type="radio" name="tech-start" id="Computer-Sci" class="inline" value="Computer-Sci"/> A Computer Science Degree
         </label>
         <label for="SEng">
-        <input type="radio" name="tech-start" id="SEng"/> A Software Engineering Degree
+        <input type="radio" name="tech-start" id="SEng" class="inline" value="SEng"/> A Software Engineering Degree
         </label>
         <label for="Self">
-        <input type="radio" name="tech-start" id="Self"/> Self-Taught
+        <input type="radio" name="tech-start" id="Self" class="inline" value="Self"/> Self-Taught
         </label>
         <label for="more">
-        <input type="radio" name="tech-start" id="more"/> Multiple Ways
+        <input type="radio" name="tech-start" id="more" class="inline" value="more"/> Multiple Ways
         </label>
-      </fieldset>
-      <fieldset>
-        <legend>How may programming languages are have you mastered or are you interested in? Tik as many that apply to you</legend>
+      </fieldset >
+      <fieldset class="languages">
+        <legend>How may programming languages are have you mastered or are you interested in? Check as many that apply to you</legend>
         <label for="C++">
-          <input type="checkbox" value="C++" id="C++"/> C++
+          <input type="checkbox" id="C++" class="inline" value="C++"/> C++
           </label>
         <label for="Javascript">
-          <input type="checkbox" id="Javascript" value="Javascript"/> Javascript
+          <input type="checkbox" id="Javascript" class="inline" value="Javascript"/> Javascript
         </label>
         <label for="React">
-          <input type="checkbox" id="React" value="React"/> React
+          <input type="checkbox" id="React" class="inline" value="React"/> React
         </label>
         <label for="Vue">
-          <input type="checkbox" id="Vue" value="Vue"/> Vue
+          <input type="checkbox" id="Vue" class="inline" value="Vue"/> Vue
         </label>
         <label for="Python">
-          <input type="checkbox" id="Python" value="Python"/> Python
+          <input type="checkbox" id="Python" class="inline" value="Python"/> Python
         </label>
         <label for="Node.js">
-          <input type="checkbox" id="Node.js" value="Node.js"/> Node.js
+          <input type="checkbox" id="Node.js" class="inline" value="Node"/> Node.js
         </label>
         <label for="C#">
-          <input type="checkbox" id="C#" value="C#"/> C#
+          <input type="checkbox" id="C#" class="inline" value="C#"/> C#
         </label>
         <label for="Ruby">
-          <input type="checkbox" id="Ruby" value="Ruby"/> Ruby
+          <input type="checkbox" id="Ruby" class="inline" value="Ruby"/> Ruby
         </label>
         <label for="Express.js">
-          <input type="checkbox" id="Express.js" value="Express.js"/> Express.js
+          <input type="checkbox" id="Express.js" class="inline" value="Express"/> Express.js
         </label>
         <label for="Django">
-          <input type="checkbox" id="Django" value="Django"/> Django
+          <input type="checkbox" id="Django" class="inline" value="Django"/> Django
         </label>
       </fieldset>
       <fieldset>
         <label for="comments">Advice for up and coming Devs:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Remember  to breath..."></textarea>
+          <textarea id="comments" name="comments" rows="6" cols="35" placeholder="Remember  to breath..."></textarea>
         </label>
       </fieldset>
       <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        <input class="inline" id="terms-and-conditions" type="checkbox" name="terms-and-conditions" value="terms-and-conditions"  required/> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
       </label>
       <input type="submit" value="Submit" id="submit"/>
     </form>
