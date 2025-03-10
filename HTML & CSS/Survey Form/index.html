@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Building a Survey Form</h1>
+    <p id="description">A survey form for future Techies.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Name:
+        <input type="text" id="name" placeholder="Enter your name.." required/>
+      </label>
+      <label for="email" id="email-label"> Email:
+        <input type="email" id="email" placeholder="Enter your email.." required/>
+      </label>
+      <label for="number" id="number-label"> Age:
+        <input type="number" id="number" min="13" max="101" placeholder="Age..." required/>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown"> How many years have you been in tech?
+        <select id="dropdown">
+          <option>(Select one option)</option>
+          <option value="1">0</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">Too long to remember</option>
+        </select>
+      </label>
+      <label> How did you get started with tech?</label>
+      <label for="bootcamp">
+        <input type="radio" name="tech-start" id="bootcamp" checked/> Bootcamp
+        </label>
+        <label for="Computer-Sci">
+        <input type="radio" name="tech-start" id="Computer-Sci"/> A Computer Science Degree
+        </label>
+        <label for="SEng">
+        <input type="radio" name="tech-start" id="SEng"/> A Software Engineering Degree
+        </label>
+        <label for="Self">
+        <input type="radio" name="tech-start" id="Self"/> Self-Taught
+        </label>
+        <label for="more">
+        <input type="radio" name="tech-start" id="more"/> Multiple Ways
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>How may programming languages are have you mastered or are you interested in? Tik as many that apply to you</legend>
+        <label for="C++">
+          <input type="checkbox" value="C++" id="C++"/> C++
+          </label>
+        <label for="Javascript">
+          <input type="checkbox" id="Javascript" value="Javascript"/> Javascript
+        </label>
+        <label for="React">
+          <input type="checkbox" id="React" value="React"/> React
+        </label>
+        <label for="Vue">
+          <input type="checkbox" id="Vue" value="Vue"/> Vue
+        </label>
+        <label for="Python">
+          <input type="checkbox" id="Python" value="Python"/> Python
+        </label>
+        <label for="Node.js">
+          <input type="checkbox" id="Node.js" value="Node.js"/> Node.js
+        </label>
+        <label for="C#">
+          <input type="checkbox" id="C#" value="C#"/> C#
+        </label>
+        <label for="Ruby">
+          <input type="checkbox" id="Ruby" value="Ruby"/> Ruby
+        </label>
+        <label for="Express.js">
+          <input type="checkbox" id="Express.js" value="Express.js"/> Express.js
+        </label>
+        <label for="Django">
+          <input type="checkbox" id="Django" value="Django"/> Django
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Advice for up and coming Devs:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Remember  to breath..."></textarea>
+        </label>
+      </fieldset>
+      <label for="terms-and-conditions">
+        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
+      <input type="submit" value="Submit" id="submit"/>
+    </form>
+
+  </body>
+</html>
