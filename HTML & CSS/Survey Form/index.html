@@ -113,3 +113,43 @@
     
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">lorem ipsium dolor any other thing</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend for="name" id="name-label">Name: <input type="text" id="name" name="fname" placeholder="Full name" required/></legend>
+      <legend for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="@...com" required/></legend>
+      <legend for="number" id="number-label">Age: <input type="number" id="number" name="number" min="10" max="120" placeholder="Age" required/></legend>
+      </fieldset>
+      <fieldset>
+        <label>
+          <select id="dropdown">
+          <option></option>
+          <option></option>
+          <option></option>
+          <option></option>
+        </select>
+        </label>
+      </fieldset>
+    </form>
+  </body>
+</html>
