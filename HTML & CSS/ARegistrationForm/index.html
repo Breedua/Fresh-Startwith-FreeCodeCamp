@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
+
   <body>
-    <h1>Registration Form</h1>
-    <p>Please fill out this form with the required information</p>
-    <form method="post" action='https://register-demo.freecodecamp.org'>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">lorem ipsium dolor any other thing</p>
+    <form id="survey-form">
       <fieldset>
-        <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" required /></label>
-        <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" required /></label>
-        <label for="email">Enter Your Email: <input id="email" name="email" type="email" required /></label>
-        <label for="new-password">Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+        <legend for="name" id="name-label">Name: <input type="text" id="name" name="fname" placeholder="Full name" required/></legend>
+      <legend for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="@...com" required/></legend>
+      <legend for="number" id="number-label">Age: <input type="number" id="number" name="number" min="10" max="120" placeholder="Age" required/></legend>
       </fieldset>
       <fieldset>
-        <legend>Account type (required)</legend>
-        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" checked /> Personal</label>
-        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Business</label>
+        <legend> How did you hear about us:
+          <select id="dropdown">
+          <option>Instagram</option>
+          <option>Tiktok</option>
+          <option>Facebook</option>
+          <option>Discord</option>
+          <option>Whatsapp</option>
+          <option>Telegram</option>
+        </select>
+        </legend>
+        <legend for="user"><input type="radio" id="user" name="radio" checked/> User </legend>
+        <legend for="worker"><input type="radio" id="worker" name="radio"/> Worker </legend>
       </fieldset>
       <fieldset>
-        <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file" name="file" /></label>
-        <label for="age">Input your age (years): <input id="age" type="number" name="age" min="13" max="120" /></label>
-        <label for="referrer">How did you hear about us?
-          <select id="referrer" name="referrer">
-            <option value="">(select one)</option>
-            <option value="1">freeCodeCamp News</option>
-            <option value="2">freeCodeCamp YouTube Channel</option>
-            <option value="3">freeCodeCamp Forum</option>
-            <option value="4">Other</option>
-          </select>
-        </label>
-        <label for="bio">Provide a bio:
-          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
-        </label>
+        <legend>What Programming Language are you interested in?</legend> <br>
+        <legend for="vjs"><input type="checkbox" id="vjs" name="check" value="vjs" checked/> Vanilla JavaScript</legend>
+        <legend for="react"><input type="checkbox" id="react" name="check" value="react" checked/> React</legend>
+        <legend for="python"><input type="checkbox" id="email" name="check" value="python" checked/> Python</legend>
+        <legend for="go"><input type="checkbox" id="go" name="check" value="go" checked/> Go</legend>
+        <legend for="node"><input type="checkbox" id="node" name="check" value="node" checked/> Node JS</legend>
+        <legend for="html"><input type="checkbox" id="html" name="check" value="html" checked/> HTML & CSS</legend>
+        <legend for="ruby"><input type="checkbox" id="ruby" name="check" for="ruby" checked/> Ruby</legend>
+        <legend for="express"><input type="checkbox" id="express" name="check" for="express" checked/> Express JS</legend>
+        <legend for="ang"><input type="checkbox" id="ang" name="check" for="ang" checked/> Angular JS</legend>
+        <legend for="vue"><input type="checkbox" id="vue" name="check" for="vue"/> Vue JS</legend>
       </fieldset>
-      <label for="terms-and-conditions">
-        <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
-      </label>
-      <input type="submit" value="Submit" />
     </form>
   </body>
 </html>
