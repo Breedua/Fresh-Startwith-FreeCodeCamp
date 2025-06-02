@@ -135,12 +135,12 @@
     <p id="description">lorem ipsium dolor any other thing</p>
     <form id="survey-form">
       <fieldset>
-        <legend for="name" id="name-label">Name: <input type="text" id="name" name="fname" placeholder="Full name" required/></legend>
-      <legend for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="@...com" required/></legend>
-      <legend for="number" id="number-label">Age: <input type="number" id="number" name="number" min="10" max="120" placeholder="Age" required/></legend>
+        <label for="name" id="name-label">Name: <input type="text" id="name" name="fname" placeholder="Full name" required/></label>
+      <label for="email" id="email-label">Email: <input type="email" id="email" name="email" placeholder="@...com" required/></label>
+      <label for="number" id="number-label">Age: <input type="number" id="number" name="number" min="10" max="120" placeholder="Age" required/></label>
       </fieldset>
       <fieldset>
-        <legend> How did you hear about us:
+        <label> How did you hear about us:
           <select id="dropdown">
             <option>Select one option</option>
           <option value="">Instagram</option>
@@ -150,22 +150,24 @@
           <option value="4">Whatsapp</option>
           <option value="5">Telegram</option>
         </select>
-        </legend>
-        <legend for="user"><input type="radio" id="user" name="radio" checked/> User </legend>
-        <legend for="worker"><input type="radio" id="worker" name="radio"/> Worker </legend>
+        </label>
+        <label for="user"><input type="radio" id="user" name="radio" value="user" checked/> User </label>
+        <label for="worker"><input type="radio" id="worker" name="radio" value="worker"/> Worker </label>
       </fieldset>
       <fieldset>
         <legend>What Programming Language are you interested in?</legend> <br>
-        <legend for="vjs"><input type="checkbox" id="vjs" name="check" value="vjs" checked/> Vanilla JavaScript</legend>
-        <legend for="react"><input type="checkbox" id="react" name="check" value="react"/> React</legend>
-        <legend for="python"><input type="checkbox" id="email" name="check" value="python"/> Python</legend>
-        <legend for="go"><input type="checkbox" id="go" name="check" value="go"/> Go</legend>
-        <legend for="node"><input type="checkbox" id="node" name="check" value="node"/> Node JS</legend>
-        <legend for="html"><input type="checkbox" id="html" name="check" value="html"/> HTML & CSS</legend>
-        <legend for="ruby"><input type="checkbox" id="ruby" name="check" for="ruby"/> Ruby</legend>
-        <legend for="express"><input type="checkbox" id="express" name="check" for="express"/> Express JS</legend>
-        <legend for="ang"><input type="checkbox" id="ang" name="check" for="ang"/> Angular JS</legend>
-        <legend for="vue"><input type="checkbox" id="vue" name="check" for="vue"/> Vue JS</legend>
+        <label for="vjs"><input type="checkbox" id="vjs" name="check" value="vjs" checked/> Vanilla JavaScript</label>
+        <label for="react"><input type="checkbox" id="react" name="check" value="react"/> React</label>
+        <label for="python"><input type="checkbox" id="email" name="check" value="python"/> Python</label>
+        <label for="go"><input type="checkbox" id="go" name="check" value="go"/> Go</label>
+        <label for="node"><input type="checkbox" id="node" name="check" value="node"/> Node JS</label>
+        <label for="html"><input type="checkbox" id="html" name="check" value="html"/> HTML & CSS</label>
+        <label for="ruby"><input type="checkbox" id="ruby" name="check" value="ruby"/> Ruby</label>
+        <label for="express"><input type="checkbox" id="express" name="check" value="express"/> Express JS</label>
+        <label for="ang"><input type="checkbox" id="ang" name="check" value="ang"/> Angular JS</label>
+        <label for="vue"><input type="checkbox" id="vue" name="check" value="vue"/> Vue JS</label>
+        <textarea placeholder="Tell me more..." rows="3" cos="40"></textarea>
+        <button type="submit" id="submit">Submit</button>
       </fieldset>
     </form>
   </body>
