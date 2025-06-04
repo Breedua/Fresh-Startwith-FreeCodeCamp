@@ -7,3 +7,6 @@ a:hover
 
 a:active 
   color: white;  The color changes right on click
+
+ ////////////////////////
+ filter: blur(2px); Is used to blur(However, i'm not sure if it blurs both text and background)
