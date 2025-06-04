@@ -10,3 +10,5 @@ a:active
 
  ////////////////////////
  filter: blur(2px); Is used to blur(However, i'm not sure if it blurs both text and background)
+
+ border-radius: 30px 25px 60px 12px; Used to create a rec shape with different sides, can be adjusted to suit needs
