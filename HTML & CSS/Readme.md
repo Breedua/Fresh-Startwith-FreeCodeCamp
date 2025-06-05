@@ -14,6 +14,7 @@ a:active
  border-radius: 30px 25px 60px 12px; (Used to create a rec shape with different sides, can be adjusted to suit needs)
 
  transform: rotate(-0.6deg);  [Use the transform property on the selector to rotate it counter clockwise by 0.6 degrees]
+ transform: rotate(0.6deg) [FFor clockwise rotation]
 
 
 
