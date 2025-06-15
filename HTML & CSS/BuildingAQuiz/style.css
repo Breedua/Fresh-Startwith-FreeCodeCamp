@@ -68,6 +68,7 @@ nav > ul > li {
   display: block;
 }
 
+/* changing the color of the anchor tag in the list elements to not clash with the header color */
 li > a {
   color: inherit;
 }
