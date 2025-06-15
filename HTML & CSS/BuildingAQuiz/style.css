@@ -60,6 +60,7 @@ h3::before {
   white-space: nowrap;
 }
 
+/* styling the li in the nav */
 nav > ul > li {
   color: #dfdfe2;
   margin: 0 0.2rem;
