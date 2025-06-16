@@ -65,7 +65,10 @@ h2 {
   border-bottom: 4px solid #dfdfe2;
   margin-top: 0px;
   padding-top: 60px;
+}
 
+.info {
+  padding: 10px 0 0 10px;
 }
 
 h3::before {
