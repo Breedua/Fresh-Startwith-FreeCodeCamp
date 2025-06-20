@@ -15,4 +15,8 @@ span[class~="sr-only"] {
   clip: rect(1px, 1px, 1px, 1px);
   /* The clip-path property determines the shape the clip property should take. Set the clip-path property to the value of inset(50%), forming the clip-path into a rectangle within the element. */
   clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
 }
