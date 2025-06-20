@@ -34,16 +34,16 @@ h1 {
 
 h1 .flex {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column-reverse;  /* Puts Balance sheet first */
   gap: 1rem;
 }
 
 /* The :first-of-type pseudo-selector is used to target the first element that matches the selector. */
 h1 .flex span:first-of-type {
-  font-size: 0.7em;
+  font-size: 0.7em; /* Using a smaller font here */
 }
 
 /* The :last-of-type pseudo-selector does the exact opposite - it targets the last element that matches the selector. */
 h1 .flex span:last-of-type {
-  font-size: 1.2em;
+  font-size: 1.2em; /* Using a bigger font here */
 }
