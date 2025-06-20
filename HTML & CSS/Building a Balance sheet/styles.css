@@ -1,3 +1,19 @@
+/* The span[class~="sr-only"] selector will select any span element whose class includes sr-only */
+span[class~="sr-only"] {
+  border: 0 !important;
+  /* The CSS clip property is used to define the visible portions of an element. Set the span[class~="sr-only"] selector to have a clip property of rect(1px, 1px, 1px, 1px). */
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  /* The clip-path property determines the shape the clip property should take. Set the clip-path property to the value of inset(50%), forming the clip-path into a rectangle within the element. */
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -5,25 +21,6 @@ html {
 body {
   font-family: sans-serif;
   color: #0a0a23;
-}
-
-/* The span[class~="sr-only"] selector will select any span element whose class includes sr-only */
-span[class~="sr-only"] {
-  border: 0;
-
-/* The CSS clip property is used to define the visible portions of an element. Set the span[class~="sr-only"] selector to have a clip property of rect(1px, 1px, 1px, 1px). */
-  clip: rect(1px, 1px, 1px, 1px);
-  /* The clip-path property determines the shape the clip property should take. Set the clip-path property to the value of inset(50%), forming the clip-path into a rectangle within the element. */
-  clip-path: inset(50%);
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-  position: absolute;
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 0;
-  margin: -1px;
 }
 
 h1 {
@@ -46,4 +43,32 @@ h1 .flex span:first-of-type {
 /* The :last-of-type pseudo-selector does the exact opposite - it targets the last element that matches the selector. */
 h1 .flex span:last-of-type {
   font-size: 1.2em; /* Using a bigger font here */
+}
+
+section {
+  max-width: 40rem;
+  margin: 0 auto;
+  border: 2px solid #d0d0d5;
+}
+
+#years {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  background: #0a0a23;
+  color: #fff;
+  padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0;
+  margin: 0 -2px;
+}
+
+#years span[class] {
+  font-weight: bold;
+  width: 4.5rem;
+  text-align: right;
+}
+
+.table-wrap {
+  padding: 0 0.75rem 1.5rem 0.75rem;
 }
