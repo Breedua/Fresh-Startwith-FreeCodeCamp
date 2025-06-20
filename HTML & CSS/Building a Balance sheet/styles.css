@@ -7,6 +7,7 @@ body {
   color: #0a0a23;
 }
 
+/* The span[class~="sr-only"] selector will select any span element whose class includes sr-only */
 span[class~="sr-only"] {
   border: 0;
 }
